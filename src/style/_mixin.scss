@@ -1,0 +1,7 @@
+@mixin transitionBtn() {
+  transition: all 0.3s ease;
+}
+
+@mixin transition-nav() {
+  transition: all 500ms ease;
+}
