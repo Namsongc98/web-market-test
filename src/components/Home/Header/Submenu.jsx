@@ -8,9 +8,9 @@ export const Submenu = ({ subMenu }) => {
   return (
     <>
       {/* eslint-disable-next-line react/prop-types */}
-      {subMenu?.map((item) => (
+      {subMenu?.map((item, index) => (
         <li
-          key={item?.id}
+          key={index}
           className={`item-submenu ${checkCurrent === item.id && "current"} `}
           onClick={() => setCurrent(item.id)}
         >
@@ -21,7 +21,18 @@ export const Submenu = ({ subMenu }) => {
           {item?.chilrend && (
             <ArrowForwardIosIcon className="hover-arrowforward" />
           )}
-         
+          {item?.chilrend && (
+            <ul>
+              {item?.chilrend?.map((item, index) => (
+                <li key={index}>
+                  <EastIcon className="icon-arrow" />
+                  <a href="" className=" ">
+                    {item?.title}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          )}
         </li>
       ))}
     </>

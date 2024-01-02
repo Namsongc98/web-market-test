@@ -107,6 +107,17 @@ section {
   display: block;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+  text-rendering: optimizeLegibility;
+  font-family: $font-family-poppins;
+}
+
 // Element
 * {
   margin: 0;
@@ -140,7 +151,7 @@ li {
   padding-left: 0;
   list-style: none;
 }
-a{
+a {
   font-family: $font-family-poppins;
 }
 
