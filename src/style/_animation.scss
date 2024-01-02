@@ -1,0 +1,28 @@
+// animation buttom
+
+@keyframes icon-sell {
+	0% {
+		transform: translateY(0); opacity: 1;
+	}
+	49% { 
+		transform: translateY(20px); opacity: 0;
+	}
+	50% { 
+		transform: translateY(-20px); opacity: 0;
+	}
+	100% {
+		transform: translateY(0); opacity: 1;
+	}
+}
+
+@keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translate3d(0, -100%, 0);
+    }
+  
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
